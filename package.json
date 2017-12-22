@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start": "nodemon index.js",
-    // --colors --watch --exit test/setup.test.js */*.test.js 
-    "test": "mocha --exit",
+    
+    "test": "mocha --colors --watch test/setup.test.js */*.test.js ",
     "cover": "nodemon --exec nyc --reporter=lcov --reporter=text-summary mocha test/setup.test.js */*.test.js",
     "heroku": "node index.js",
     "travis": "mocha test/setup.test.js */*.test.js"
